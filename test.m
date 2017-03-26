@@ -1,6 +1,5 @@
 % This MATLAB program checks the feasibility of LMIs from Theorems 1, 2 and Remarks 1, 3 of the paper 
-% A. Selivanov and E. Fridman, “Event-Triggered H-infinity Control: a Switching Approach,” 
-% IEEE Transactions on Automatic Control, vol. 61, no. 10, pp. 3221–3226, 2016.
+% A. Selivanov and E. Fridman, “Event-Triggered H-infinity Control: a Switching Approach,” IEEE Transactions on Automatic Control, vol. 61, no. 10, pp. 3221–3226, 2016.
 
 %% Parameters from Example 1
 A=[0 1; 0 -3]; B=[0; 1]; C=[1 0]; K=3; 
