@@ -1,7 +1,6 @@
 function OmegaVal=LMI_TAC16_th2(A,B1,B2,C1,D1,C2,D2,K,gamma,h,etaM,epsilon,delta)
 % This MATLAB program checks the feasibility of LMIs from Theorem 2 of the paper 
-% A. Selivanov and E. Fridman, “Event-Triggered H-infinity Control: a Switching Approach,” 
-% IEEE Transactions on Automatic Control, vol. 61, no. 10, pp. 3221–3226, 2016.
+% A. Selivanov and E. Fridman, “Event-Triggered H-infinity Control: a Switching Approach,” IEEE Transactions on Automatic Control, vol. 61, no. 10, pp. 3221–3226, 2016.
 
 % The program uses YALMIP parser (http://users.isy.liu.se/johanl/yalmip/)
 % and LMILAB solver of Robust Control Toolbox (http://www.mathworks.com/products/robust/)
@@ -99,8 +98,8 @@ OmegaVal=[];
 if sol.problem == 0
     primal=check(LMIs); 
     if min(primal)>=0 && primal(1)>0
-        OmegaVal=double(Omega); 
+        OmegaVal=value(Omega); 
     end
 else
-    yalmiperror(sol.problem); 
+    yalmiperror(sol.problem) 
 end
